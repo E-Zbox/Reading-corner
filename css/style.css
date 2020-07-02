@@ -1,0 +1,355 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--deep-blue);
+}
+
+body {
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+a, a:visited {
+  color: #303080;
+  text-transform: uppercase;
+}
+
+a {
+  margin-right: var(--seven-px);
+}
+
+:root {
+  --ten-px: 10px;
+  --seven-px: 7px;
+  --three-px: 3px;
+  --light-blue: rgb(0, 224, 256);
+  --deep-blue: rgb(0, 0, 48);
+}
+
+nav {
+  width: 100%;
+}
+nav .navbar-container {
+  box-sizing: border-box;
+  background-color: black;
+  padding: var(--seven-px);
+  width: 100%;
+}
+nav .navbar-container .btn {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--ten-px) var(--ten-px);
+  width: 30px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: 0px 0px 3px white;
+}
+nav .navbar-container .btn div {
+  background-color: white;
+  width: 15px;
+  height: 2px;
+  border-radius: 10px;
+  margin-bottom: 2px;
+}
+nav .navbar-container .navbar {
+  width: 100%;
+}
+nav .navbar-container .navbar ul {
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+nav .navbar-container .navbar ul li {
+  color: var(--light-blue);
+  padding: var(--seven-px) var(--ten-px);
+  list-style: none;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+nav .navbar-container .navbar ul li::first-letter {
+  font-size: 1.4rem;
+}
+
+main .container .contents .content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 0px;
+}
+main .container .contents .content div {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+main .container .contents .content div .text-info {
+  width: 90%;
+  display: block;
+  padding: calc(var(--ten-px)*2) var(--seven-px);
+}
+main .container .contents .content .percent-45 {
+  width: 100%;
+  padding: var(--ten-px) var(--three-px);
+}
+main .container .contents .content .percent-45 img {
+  width: 95%;
+}
+main .container .contents .content .text-info {
+  display: block;
+  width: 90%;
+  padding: calc(var(--ten-px) * 1.9) var(--ten-px);
+}
+main .container .contents .content .div-02 {
+  margin-top: calc(var(--ten-px) * 3);
+  display: grid;
+  grid-template-columns: 12% auto;
+}
+main .container .contents .content .div-02 .counter-clockwise-90 {
+  transform: rotate(-90deg);
+  width: 200px;
+  display: block;
+  position: relative;
+  top: 100px;
+  left: -80px;
+  font-family: Calibri;
+}
+main .container .contents .content .div-02 .counter-clockwise-90 h4 {
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+main .container .contents .content .div-02 .counter-clockwise-90 p {
+  font-size: 0.8rem;
+}
+main .container .contents .content .schedule-info {
+  box-sizing: border-box;
+  background-color: var(--deep-blue);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--ten-px) * 2) var(--ten-px);
+}
+main .container .contents .content .schedule-info .schedule {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 90%;
+}
+main .container .contents .content .schedule-info .schedule::before {
+  content: "";
+  background-color: #000020;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  transform: translateY(-10px);
+}
+main .container .contents .content .schedule-info .schedule div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-top: 1px solid #ededed;
+  padding: var(--three-px);
+}
+main .container .contents .content .schedule-info .schedule p {
+  width: 60%;
+  color: #ededed;
+  display: flex;
+  flex-direction: column;
+}
+main .container .contents .content .schedule-info .schedule p span {
+  color: #cdcdcd;
+}
+main .container .contents .content .schedule-info .schedule .p-01 {
+  width: 30%;
+  color: #ededed;
+}
+main .container .contents .content .schedule-info .schedule .color-blue p, main .container .contents .content .schedule-info .schedule .color-blue span {
+  color: var(--light-blue);
+}
+main .container .contents .content .schedule-info .schedule .color-blue .p-01 {
+  color: #ededed;
+}
+main .container .contents .content .schedule-info .clockwise-90 {
+  margin-top: calc(var(--ten-px) * 2);
+}
+main .container .contents .content .schedule-info .clockwise-90 p, main .container .contents .content .schedule-info .clockwise-90 a {
+  color: #ededed;
+}
+main .container .contents .content .schedule-info .clockwise-90 a:hover {
+  color: var(--light-blue);
+}
+main .container .contents .content .schedule-info .clockwise-90 a:hover::before {
+  background-color: #6080a0;
+  clip-path: circle(100% at 49%);
+}
+main .container .contents .content-02 {
+  background-color: #6080a0;
+}
+main .container .contents .content-03 .text-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: calc(var(--ten-px) * 8) calc(var(--ten-px) * 4);
+}
+main .container .contents .content-03 .text-info p, main .container .contents .content-03 .text-info a {
+  color: #c0c0c0;
+}
+main .container .contents .content-03 .text-info a:hover {
+  color: var(--light-blue);
+}
+main .container .contents .content-03 .text-info h2 {
+  width: 60%;
+  color: white;
+}
+main .container .contents .content-03 .text-info div {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: calc(var(--ten-px) * 2);
+}
+
+.blue-bg {
+  background-color: #202080;
+}
+
+.light-blue-top::before {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: var(--light-blue);
+}
+
+@media (min-width: 1000px) {
+  main .container .contents {
+    padding-top: var(--three-px);
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: calc(var(--ten-px) * 2);
+  }
+  main .container .contents .content-01 {
+    display: grid;
+    grid-template-columns: 40px 45% 45%;
+    grid-column-gap: calc(var(--ten-px) * 3);
+  }
+  main .container .contents .content-01:before {
+    content: "";
+    height: inherit;
+    width: auto;
+    background-color: var(--deep-blue);
+  }
+  main .container .contents .content-01 .div-01 > .text-info, main .container .contents .content-01 .percent-45 {
+    padding-right: var(--ten-px);
+    padding-top: calc(var(--ten-px) * 4);
+  }
+  main .container .contents .content-01 .div-01 .text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80%;
+  }
+  main .container .contents .content-01 .div-01 .text-info h2 {
+    width: 40%;
+  }
+  main .container .contents .content-01 .percent-45 {
+    overflow: hidden;
+    height: 450px;
+  }
+  main .container .contents .content-01 .percent-45 img {
+    width: 100%;
+    transition: ease 0.3s;
+  }
+  main .container .contents .content-01 .percent-45 img:hover {
+    width: 105%;
+  }
+  main .container .contents .content-02 {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    background-color: #ededed;
+  }
+  main .container .contents .content-02 .text-info {
+    height: 22vh;
+    padding-top: calc(var(--ten-px)*8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .container .contents .content-02 .text-info h2 {
+    width: 50%;
+  }
+  main .container .contents .content-02 .div-02 {
+    padding: calc(var(--ten-px)*3) 0;
+    padding-right: var(--ten-px);
+  }
+  main .container .contents .content-03 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+  main .container .contents .content-03 .schedule-info .schedule {
+    width: 80%;
+    padding: 60px 0px;
+  }
+  main .container .contents .content-03 .schedule-info .clockwise-90 {
+    float: right;
+  }
+}
+footer {
+  padding: calc(var(--ten-px) * 3) calc(var(--ten-px) * 5);
+}
+footer p {
+  margin-bottom: var(--ten-px);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer::before {
+  content: '"';
+  font-family: "Candara";
+  font-size: 3.5rem;
+  padding: 0px;
+  transform: translate(-130px, 40px);
+  color: var(--light-blue);
+  opacity: 0.6;
+}
+
+a {
+  padding: var(--ten-px) var(--three-px);
+  position: relative;
+}
+a::before {
+  content: "";
+  position: absolute;
+  background-color: var(--deep-blue);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  clip-path: circle(0% at 49%);
+  transition: 0.8s;
+}
+a:hover {
+  color: var(--light-blue);
+  z-index: 0;
+}
+a:hover::before {
+  clip-path: circle(100% at 49%);
+}
+
+/*# sourceMappingURL=style.css.map */
